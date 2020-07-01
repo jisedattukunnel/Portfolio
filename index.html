@@ -151,7 +151,7 @@
                                             </h5>
                                         </div>
                                         <p class="lead">
-                                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.
+                                            I want to learn more about the industry and gain first-hand experience about the responsibilities and requirements of the company. Being a quick learner, I wish to develop a more rounded skill-set and improve my job capabilities.
                                         </p>
                                     </div>
 
@@ -166,7 +166,7 @@
                                             <b> Tata Consultancy Services, TCS- Process Associate</b>
                                         </h1>
                                         <p class="lead">
-                                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                            Bangalore, Karnataka-12/2019 –Current
                                         </p>
                                     </div>
 
@@ -181,13 +181,13 @@
                                             <b> BSc. Computer Science</b>
                                         </h1>
                                         <p class="lead">
-                                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                            LISSAH CollegeKaithapoyil, Calicut -05/2019
                                         </p>
                                         <h1 class="lead">
                                             <b> Higher Secondary Education</b>
                                         </h1>
                                         <p class="lead">
-                                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                            Govt. Higher Secondary School, Puthuppady, Calicut -05/2015
                                         </p>
                                     </div>
 
@@ -223,7 +223,6 @@
                             <div class="service-content">
                                 <h2 class="s-title">Web Design</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
                                 </p>
                             </div>
                         </div>
@@ -236,7 +235,6 @@
                             <div class="service-content">
                                 <h2 class="s-title">Web Development</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
                                 </p>
                             </div>
                         </div>
@@ -250,7 +248,6 @@
                             <div class="service-content">
                                 <h2 class="s-title">Responsive Design</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
                                 </p>
                             </div>
                         </div>
@@ -642,6 +639,7 @@
         <!-- End Blog Section -->
 
         <!-- ======= Contact Section ======= -->
+
         <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
             <div class="overlay-mf"></div>
             <div class="container">
@@ -653,11 +651,12 @@
                                     <div class="col-md-6">
                                         <div class="title-box-2">
                                             <h5 class="title-left">
-                                                Send Message Us
+                                                Send Message
                                             </h5>
                                         </div>
+
                                         <div>
-                                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                            <form action="mailto:jismon54@gmail.com" method="post" enctype="text/plain" class="php-email-form">
                                                 <div class="row">
                                                     <div class="col-md-12 mb-3">
                                                         <div class="form-group">
@@ -703,7 +702,7 @@
                                         </div>
                                         <div class="more-info">
                                             <p class="lead">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?
+                                                Feel free to contact me on my address or through mobile.
                                             </p>
                                             <ul class="list-ico">
                                                 <li><span class="ion-ios-location"></span> Edattukunnel House</li>
@@ -717,11 +716,11 @@
                                         </div>
                                         <div class="socials">
                                             <ul>
-                                                <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-                                                <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                                                <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                                                <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                                                <li><a href=""><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                                <li><a href="https://github.com/jisedattukunnel"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/jis-mon-e-s-28241815a/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                                <li><a href="https://www.facebook.com/profile.php?id=100006752147782"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                                                <li><a href="https://www.instagram.com/__jis_/"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -776,6 +775,42 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+        var form = document.forms["contact"];
+        form.addEventListener('submit', contact_submit, false);
+
+        function contact_submit(e) {
+            // Stop Form From Submitting
+            e.preventDefault();
+
+            // Set Initial Variables
+            var target = e.target || e.srcElement;
+            var to = 'jismon54@gmail.com';
+            var uri = 'mailto:' + to;
+            var body = '';
+
+            // Set Form Values to Variables
+            var name = target.elements['name'].value;
+            var subject = target.elements['email'].value;
+            var phone = target.elements['text'].value;
+            var message = target.elements['message'].value;
+
+            // Build Body / Message with all Input Fields
+            body += message + "\r\n\r\n";
+            body += "Name: " + name + "\r\n";
+            body += "Phone Number: " + phone + "\r\n";
+
+            // Build final Mailto URI
+            uri += '?subject=' + encodeURIComponent(subject);
+            uri += '&body=' + encodeURIComponent(body);
+
+            // Open Mailto in New Window / Tab
+            window.open(uri, '_blank');
+        }
+    </script>
+
 
 </body>
 
