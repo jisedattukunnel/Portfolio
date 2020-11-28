@@ -923,9 +923,7 @@
         var form = document.forms["contact"];
         form.addEventListener('submit', contact_submit, false);
 
-        function contact_submit(e) {
-            // Stop Form From Submitting
-            e.preventDefault();
+       
 
             // Set Initial Variables
             var target = e.target || e.srcElement;
